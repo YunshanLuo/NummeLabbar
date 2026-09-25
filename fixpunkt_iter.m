@@ -21,6 +21,7 @@ tol = 1e-10;
 diff = 1;
 curr_iter = fixpoint_iter(start_guess);
 fprintf("startgissning: %d\n", start_guess)
+fprintf('%.16\n',curr_iter)
 
 while diff > tol
     next_iter = fixpoint_iter(curr_iter);
